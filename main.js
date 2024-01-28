@@ -1,7 +1,7 @@
 // Define possible responses
 
 const responses = [
-  "Outlook not so good, but hey, who trusts a fortune teller anyway?",
+  "Outlook not so good, but hey, who trusts a Spiner anyway?",
   "Reply hazy, ask again after you've had your morning coffee.",
   "Cannot predict now, I'm too busy contemplating the mysteries of the universe.",
   "Signs point to... why are you asking me? You should know better!",
@@ -20,11 +20,11 @@ function generateResponse() {
 }
 
 // Function for user input and display response
-function spiner() {
+function Spiner() {
   const question = prompt("Ask your Spiner a yes-or-no question:");
   if (question) {
     const response = generateResponse();
-    alert("The Spiner says: " + response);
+    alert("Spiner says: " + response);
   } else {
     alert("You didn't ask anything!");
   }
@@ -34,9 +34,9 @@ function spiner() {
 const button = document.getElementById("button");
 
 // Add an event listener to the button
-button.addEventListener("click", spiner);
+button.addEventListener("click", Spiner);
 
 // Call the fortuneTeller function to start the program
-spiner();
+Spiner();
 
 // Credits to Stack Overfloww

@@ -20,11 +20,11 @@ function generateResponse() {
 }
 
 // Function for user input and display response
-function fortuneTeller() {
-  const question = prompt("Ask your Fortune Teller a yes-or-no question:");
+function spiner() {
+  const question = prompt("Ask your Spiner a yes-or-no question:");
   if (question) {
     const response = generateResponse();
-    alert("The Fortune Teller says: " + response);
+    alert("The Spiner says: " + response);
   } else {
     alert("You didn't ask anything!");
   }
@@ -34,9 +34,9 @@ function fortuneTeller() {
 const button = document.getElementById("button");
 
 // Add an event listener to the button
-button.addEventListener("click", fortuneTeller);
+button.addEventListener("click", spiner);
 
 // Call the fortuneTeller function to start the program
-fortuneTeller();
+spiner();
 
 // Credits to Stack Overfloww
